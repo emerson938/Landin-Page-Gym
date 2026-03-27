@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+/* LEFT */
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left img {
+    width: 120px;
+    filter: invert(100%);
+}
+
+/* NAVBAR */
+.mid {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 10px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+}
+
+/* RIGHT */
+.right {
+    display: flex;
+}
+
+/* BUTTON */
+.btn {
+    margin: 5px;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn:hover {
+    background-color: rgb(19, 18, 18);
+}
+
+/* CONTAINER */
+.container {
+    color: white;
+    border: 2px solid white;
+    margin: 50px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 30px;
+}
+
+/* TEXT */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* INPUT */
+.form-group input {
+    text-align: center;
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* BUTTON FULL */
+.container button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* BOTÃO FIXO (whatsapp ou algo assim) */
+.container2 {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mid {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        margin-top: 10px;
+    }
+
+    .left img {
+        width: 90px;
+    }
+}
